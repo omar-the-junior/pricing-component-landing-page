@@ -1,0 +1,49 @@
+/////////////////////////////////////////////
+///////////////buttons styles////////////////
+////////////////////////////////////////////////////////////////////////////////
+
+.btn {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  font-weight: 400;
+  color: #fff;
+  width: 100%;
+  border-radius: 0.5rem;
+  background-image: var(--primary-gradient);
+  padding: 1rem 0 ;
+  border: solid white 0.5px;
+  transition: all 0.5s;
+  cursor: pointer;
+  position: relative;
+  text-transform: uppercase;
+  z-index: 1;
+
+  &:hover {
+    background-image: none;
+    background-color: #fff;
+    color: hsl(237, 63%, 64%);
+    border-color: hsl(237, 63%, 64%);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &--dark-violet {
+    border: solid 2px var(--dark-violet);
+    color: var(--dark-violet);
+
+    &::after {
+      background-color: var(--dark-violet);
+    }
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}

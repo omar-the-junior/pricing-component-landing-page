@@ -1,0 +1,48 @@
+///////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////toggle switch button/////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.pricing {
+  &-switch {
+    text-align: center;
+    margin: 5rem 0;
+
+    #switch {
+      display: none;
+
+      &:checked + .pricing-switch__toggle::after{
+        transform: translateX(-100%);
+      }
+    }
+
+    &__toggle {
+      position: relative;
+      display: inline-block;
+      width: 6rem;
+      height: 3.5rem;
+      padding: 0.5rem;
+      border-radius: 2rem;
+      margin: 0 2rem;
+      background-image: var(--primary-gradient);
+      cursor: pointer;
+      transition: opacity .3s;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+        background-color: #fff;
+        transition: transform .3s;
+      }
+
+      &:hover{
+          opacity: .7;
+      }
+    }
+  }
+
+  &-time-range {
+    color: var(--light-grayish-blue);
+  }
+}
