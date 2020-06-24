@@ -9,9 +9,9 @@
   font-weight: 400;
   color: #fff;
   width: 100%;
-  border-radius: 0.5rem;
+  padding: 1rem 0;
   background-image: var(--primary-gradient);
-  padding: 1rem 0 ;
+  border-radius: 0.5rem;
   border: solid white 0.5px;
   transition: all 0.5s;
   cursor: pointer;
@@ -34,16 +34,4 @@
     outline: none;
   }
 
-  &--dark-violet {
-    border: solid 2px var(--dark-violet);
-    color: var(--dark-violet);
-
-    &::after {
-      background-color: var(--dark-violet);
-    }
-
-    &:hover {
-      color: #fff;
-    }
-  }
 }
